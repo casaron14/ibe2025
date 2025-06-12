@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>User Info</title>
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+  <!-- Progress Bar -->
+  <div class="progress-bar">
+    <a href="index.html" class="step completed">Start</a>
+    <a href="select-seat.html" class="step completed">Select Seat</a>
+    <a class="step current">Enter Info</a>
+    <a class="step">Payment</a>
+    <a class="step">Reference</a>
+    <a class="step">Proof</a>
+    <a class="step">Done</a>
+  </div>
+
+  <!-- Form Container -->
+  <div class="container">
+    <h2>Enter Your Info</h2>
+    <form id="infoForm">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+
+      <label for="location">Coming From:</label>
+      <input type="text" id="location" name="location" placeholder="Your location" required />
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" placeholder="Please input your phone number" required 
+             pattern="[0-9+()\- ]{7,15}" title="Enter a valid phone number" />
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="example@example.com" required />
+
+      <br>
+
+      <div class="center-wrapper">
+        <button type="submit" class="btn">Next</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="js/user-info.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Upload Payment Proof</title>
+  <link rel="stylesheet" href="css/styles.css" />
+
+</head>
+<body>
+  <div class="progress-bar">
+    <a href="index.html" class="step completed">Start</a>
+    <a href="select-seat.html" class="step completed">Select Seat</a>
+    <a href="user-info.html" class="step completed">Enter Info</a>
+    <a href="payment-method.html" class="step completed">Payment</a>
+    <a href="reference.html" class="step completed">Reference</a>
+    <a class="step current">Proof</a>
+    <a class="step">Done</a>
+  </div>
+<div class="user-info-display">
+  <h3>User Information Summary</h3>
+  <p><strong>Name:</strong> <span id="displayName"></span></p>
+  <p><strong>Email:</strong> <span id="displayEmail"></span></p>
+  <p><strong>Phone:</strong> <span id="displayPhone"></span></p>
+  <p><strong>Seat Type:</strong> <span id="displaySeat"></span></p>
+  <p><strong>Payment Method:</strong> <span id="displayPayment"></span></p>
+  <p><strong>Reference Code:</strong> <span id="displayRef"></span></p>
+</div>
+
+<div class="upload-container">
+  <h2 class="upload-title">Upload Proof of Payment</h2>
+  <form id="proofForm" class="upload-form">
+    <label for="proof" class="upload-label">Upload Image</label>
+    <input type="file" id="proof" accept="image/*" required class="upload-input">
+    
+    <div class="center-wrapper">
+      <button type="submit" class="btn upload-btn">Upload Proof</button>
+    </div>
+  </form>
+</div>
+
+
+  <script src="js/upload-proof.js"></script>
+</body>
+</html>

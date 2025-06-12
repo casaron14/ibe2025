@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Payment Method</title>
+  <link rel="stylesheet" href="css/styles.css" />
+
+</head>
+<body>
+  <div class="progress-bar">
+    <a href="index.html" class="step completed">Start</a>
+    <a href="select-seat.html" class="step completed">Select Seat</a>
+    <a href="user-info.html" class="step completed">Enter Info</a>
+    <a class="step current">Payment</a>
+    <a class="step">Reference</a>
+    <a class="step">Proof</a>
+    <a class="step">Done</a>
+  </div>
+
+  <div class="container">
+    <h2>Select Payment Method</h2>
+    <div class="payment-options">
+      <button type="button" onclick="showImage('mobile')">Mobile Money</button>
+      <button type="button" onclick="showImage('bank')">Bank Transfer</button>
+      <button type="button" onclick="showImage('crypto')">On-Chain Payment</button>
+      <button type="button" onclick="showImage('binancePay')">Binance Pay</button>
+    </div>
+
+    <div id="imagePopup" class="popup hidden">
+      <span class="close-btn" onclick="hidePopup()">×</span>
+      <img id="popupImage" src="" alt="Payment QR">
+      <div class="copy-section">
+          <p id="paymentDetails"></p>
+          <button onclick="copyToClipboard()" class='btn'>Copy</button>
+</div>
+
+
+
+    <form id="paymentForm"  >
+      <button type="submit" class='btn'>Next</button>
+    </form>
+  </div>
+
+  <script src="js/payment-method.js"></script>
+</body>
+</html>

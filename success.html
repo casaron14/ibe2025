@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Booking Successful</title>
+  <link rel="stylesheet" href="css/styles.css" />
+
+</head>
+<body>
+  <div class="progress-bar">
+    <a class="step completed">Start</a>
+    <a class="step completed">Select Seat</a>
+    <a class="step completed">Enter Info</a>
+    <a class="step completed">Payment</a>
+    <a class="step completed">Reference</a>
+    <a class="step completed">Proof</a>
+    <a class="step current">Done</a>
+  </div>
+
+  <div class="container">
+    <h2>Thank you for booking!</h2>
+    <p>Your ticket booking is complete. We'll contact you soon after verifying your payment.</p>
+    <p>Reference Code: <strong id="refCode"></strong></p>
+
+    <div class="center-wrapper" style="margin-top: 30px;">
+      <button onclick="bookAnother()" class="btn">Book Another Ticket</button>
+    </div>
+  </div>
+
+  <script>
+    // Display the reference code
+    document.getElementById("refCode").innerText = localStorage.getItem("referenceCode") || "Not available";
+
+    // Function to restart the process
+    function bookAnother() {
+      localStorage.clear(); // Optional: clear previous data
+      window.location.href = "index.html";
+    }
+  </script>
+</body>
+</html>

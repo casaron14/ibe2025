@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Payment Reference</title>
+  <link rel="stylesheet" href="css/styles.css" />
+
+
+</head>
+<body>
+  <div class="progress-bar">
+    <a href="index.html" class="step completed">Start</a>
+    <a href="select-seat.html" class="step completed">Select Seat</a>
+    <a href="user-info.html" class="step completed">Enter Info</a>
+    <a href="payment-method.html" class="step completed">Payment</a>
+    <a class="step current">Reference</a>
+    <a class="step">Proof</a>
+    <a class="step">Done</a>
+  </div>
+
+  <div class="container">
+    <h2>Your Reference Number</h2>
+    <p>Please use the following reference number when making your payment:</p>
+    <h3 id="refCode"></h3>
+    <p>After payment, upload proof of payment in the next step.</p>
+    <div class="center-wrapper">
+        <button onclick="nextStep()" class="btn">Upload Proof</button>
+      </div>
+
+  <script src="js/reference.js"></script>
+</body>
+</html>

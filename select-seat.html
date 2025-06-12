@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Select Seat</title>
+  <link rel="stylesheet" href="css/styles.css" />
+
+</head>
+<body>
+  <div class="progress-bar">
+    <a href="index.html" class="step completed">Start</a>
+    <a class="step current">Select Seat</a>
+    <a class="step">Enter Info</a>
+    <a class="step">Payment</a>
+    <a class="step">Reference</a>
+    <a class="step">Proof</a>
+    <a class="step">Done</a>
+  </div>
+
+  <div class="container">
+    <h2>Select Your Seat</h2><form id="seatForm">
+  <div class="seat-options">
+    <input type="radio" id="normalSeat" name="seat" value="Normal" required>
+    <label for="normalSeat">Normal Seat</label>
+
+    <input type="radio" id="vipSeat" name="seat" value="VIP" required>
+    <label for="vipSeat">VIP Seat</label>
+  </div>
+  <div class="center-wrapper">
+        <button type="submit" class="btn">Next</button>
+    </div>
+  
+</form>
+
+  </div>
+
+  <script src="js/select-seat.js"></script>
+</body>
+</html>
