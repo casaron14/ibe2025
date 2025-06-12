@@ -39,6 +39,17 @@ function sendToGoogleForm() {
       console.error("Error submitting form:", error);
     });
   }
+function submitToGoogleForm() {
+  // Get data from localStorage
+  document.getElementById("g_name").value = localStorage.getItem("userName") || "";
+  document.getElementById("g_phone").value = localStorage.getItem("userPhone") || "";
+  document.getElementById("g_email").value = localStorage.getItem("userEmail") || "";
+  document.getElementById("g_seat").value = localStorage.getItem("seatType") || "";
+  document.getElementById("g_ref").value = localStorage.getItem("referenceCode") || "";
+
+  // Submit the form
+  document.getElementById("googleForm").submit();
+}
 
 document.getElementById("proofForm").addEventListener("submit", function(event) {
     event.preventDefault();
