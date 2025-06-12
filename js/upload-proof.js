@@ -8,7 +8,6 @@ document.getElementById("proofForm").addEventListener("submit", function(e) {
     alert("Please upload a file.");
   }
 });
-
 document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("displayName").innerText = localStorage.getItem("userName") || "N/A";
   document.getElementById("displayEmail").innerText = localStorage.getItem("userEmail") || "N/A";
@@ -19,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function sendToGoogleForm() {
-    const formUrl = "https://forms.gle/hAaaivqMGG5MmEJz5";
+    const formUrl = "https://docs.google.com/forms/d/e/1FAIpQLSda05bAbPsvhb0q9Tge4i8ZuFCa1Nnm4QEIPSDZtRWoy9DAYg/viewform?usp=pp_url";
 
     const formData = new FormData();
     formData.append("entry.105274938", localStorage.getItem("userName") || "");
