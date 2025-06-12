@@ -41,7 +41,7 @@ function sendToGoogleForm() {
     });
   }
 
-document.getElementById("proofForm").addEventListener("submit", function(e) {
-    e.preventDefault();
+document.getElementById("proofForm").addEventListener("submit", function(event) {
+    event.preventDefault();
     sendToGoogleForm(); // submit to Google Forms
   });
