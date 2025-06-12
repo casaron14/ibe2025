@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function sendToGoogleForm() {
-    const formUrl = "https://docs.google.com/forms/d/e/1FAIpQLSda05bAbPsvhb0q9Tge4i8ZuFCa1Nnm4QEIPSDZtRWoy9DAYg/viewform?usp=pp_url";
+    const formUrl = "https://docs.google.com/forms/d/e/1FAIpQLSda05bAbPsvhb0q9Tge4i8ZuFCa1Nnm4QEIPSDZtRWoy9DAYg/formResponse";
 
     const formData = new FormData();
     formData.append("entry.105274938", localStorage.getItem("userName") || "");
